@@ -1,0 +1,121 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #4a4a4a;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+button, select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #667eea;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, select:hover {
+    background-color: #764ba2;
+}
+
+#answers button {
+    background-color: #667eea;
+}
+
+#answers button:hover {
+    background-color: #764ba2;
+}
+
+#answers button.selected {
+    background-color: #4CAF50;
+}
+
+#submit-answer {
+    background-color: #4CAF50;
+}
+
+#submit-answer:hover {
+    background-color: #45a049;
+}
+
+#reset-score, #restart-quiz {
+    background-color: #f44336;
+}
+
+#reset-score:hover, #restart-quiz:hover {
+    background-color: #d32f2f;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
