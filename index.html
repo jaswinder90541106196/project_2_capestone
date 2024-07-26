@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">QuizMaster</div>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="home" class="page active">
+        <div class="container">
+            <h1>Welcome to QuizMaster</h1>
+            <p>Test your knowledge with our exciting quizzes!</p>
+            <form id="difficulty-form">
+                <label for="difficulty">Select Difficulty Level:</label>
+                <select id="difficulty" name="difficulty" required>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <button type="submit">Start Quiz</button>
+            </form>
+
+            <div id="quiz-container" class="hidden">
+                <h2 id="question"></h2>
+                <div id="answers"></div>
+                <button id="submit-answer" class="hidden">Submit Answer</button>
+                <p id="result"></p>
+                <p>Question <span id="current-question">0</span> of <span id="total-questions">0</span></p>
+            </div>
+
+            <div id="score-container">
+                <p>Correct Answers: <span id="correct-count">0</span></p>
+                <p>Incorrect Answers: <span id="incorrect-count">0</span></p>
+                <button id="reset-score">Reset Score</button>
+            </div>
+
+            <div id="final-score-container" class="hidden">
+                <h2>Quiz Completed</h2>
+                <p>Your final score is:</p>
+                <p>Correct Answers: <span id="final-correct-count">0</span></p>
+                <p>Incorrect Answers: <span id="final-incorrect-count">0</span></p>
+                <button id="restart-quiz">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="page">
+        <div class="container">
+            <h1>About QuizMaster</h1>
+            <p>QuizMaster is an interactive quiz application designed to challenge and educate users across various topics and difficulty levels. Our mission is to make learning fun and engaging for everyone.</p>
+            <p>Features:</p>
+            <ul>
+                <li>Multiple difficulty levels</li>
+                <li>Wide range of topics</li>
+                <li>Instant feedback on answers</li>
+                <li>Score tracking</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact" class="page">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
